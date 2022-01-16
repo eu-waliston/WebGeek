@@ -333,7 +333,23 @@ img {
   background-color: var(--dark-color);
 }
 
+/* testimonials */
 
+.testimonials-item {
+  background-color: var(--gray-color);
+  margin: 2rem 0;
+  padding: 2rem 3rem;
+  text-align: center;
+}
+
+.testimonials-item .image{
+  overflow: hidden;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border:  5px solid var(--light-color);
+  margin: 1rem auto;
+}
 
 
 
