@@ -351,6 +351,20 @@ img {
   margin: 1rem auto;
 }
 
+.testimonials-item .text {
+  line-height: 1.7;
+}
+
+.testimonials-item h2 {
+  font-size: 2rem;
+  color: var(--yellow-orange-color);
+  margin: 2rem 0 1rem 0;
+}
+
+.testimonials-item span {
+  opacity: 0.6;
+  font-weight: 600;
+}
 
 
 /*------------------------ MEDIA QUERIES-------------------------- */
@@ -381,7 +395,7 @@ img {
   .input-group {
     justify-content: start;
   }
-  .services-grid, .features-grid {
+  .services-grid, .features-grid, .testimonials-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
@@ -452,5 +466,8 @@ img {
   }
   #services-left {
     display: block;
+  }
+  .testimonials-grid {
+    grid-template-columns: repeat(4,1fr);
   }
 }
