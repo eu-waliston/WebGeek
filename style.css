@@ -55,6 +55,7 @@ button, .btn {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .flex {
@@ -181,7 +182,7 @@ img {
 
 /*
 .banner .container {
-   min-height: 70vh; 
+   min-height: 70vh;
 }
 */
 
@@ -366,6 +367,97 @@ img {
   font-weight: 600;
 }
 
+/* pricing section */
+#pricing {
+  background-color: var(--gray-color);
+}
+
+.pricing-item {
+  text-align: center;
+  background-color: var(--light-color);
+  margin: 2rem auto;
+  padding: 3rem;
+  max-width: 450px
+}
+
+.pricing-item h2 {
+  color: var(var yellow-orange-color);
+}
+
+.pricing-item .price {
+  margin: 2rem 0;
+}
+
+.pricing-item p {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.pricing-item p span {
+  font-size: 4.4rem;
+}
+
+.pricing-item .btn {
+  background-color: var(--old-lace-color);
+  color: var(--yelllow-orange-color);
+  padding: 1.3rem 2rem;
+  display: inline-block;
+  font-weight: 600;
+  transition: var(--transition);
+  border-radius: 5px;
+}
+
+.pricing-item .btn:hover {
+  background-color: var(--yellow-orange-color);
+  color: var(--light-color);
+}
+
+.pricing-item ul {
+  margin: 2.8rem 0 0 0;
+}
+
+.pricing-item ul li {
+  margin-bottom: 1rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--gray-color);
+}
+
+.pricing-item:nth-child(2) {
+  background-color: var(--yellow-orange-color);
+  color: var(--light-color);
+}
+
+.pricing-item:nth-child(2) {
+  color: var(--ligth-color);
+}
+
+.pricing-item:nth-child(2) h2 {
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+
+.pricing-item:nth-child(2) .btn {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+.pricing-item:nth-child(2) .btn:hover {
+  background-color: var(--old-lace-color);
+  color: var(--yellow-orange-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*------------------------ MEDIA QUERIES-------------------------- */
 
@@ -447,6 +539,14 @@ img {
   .features-grid {
     grid-template-columns: repeat(4, 1fr);
   }
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+  .pricing-item {
+    width: 100%;
+  }
 
 }
 
@@ -469,5 +569,8 @@ img {
   }
   .testimonials-grid {
     grid-template-columns: repeat(4,1fr);
+  }
+  .pricing-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
