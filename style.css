@@ -445,6 +445,90 @@ img {
   color: var(--yellow-orange-color);
 }
 
+/* Contact  Section*/
+#contact {
+  background-color: var(--gray-color);
+  position: relative;
+}
+.contact-wrapper {
+  background-color: var(--light-color);
+  padding: 4rem 3rem;
+  z-index: 10;
+  position: relative;
+}
+.contact-info h2 {
+  margin-bottom: 3rem;
+}
+.contact-info {
+  margin-bottom: 6rem;
+}
+.info-group{
+  margin: 1rem 0;
+  font-size: 1.7rem;
+}
+.info-group .icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+  background-color: var(--old-lace-color);
+}
+.info-group .icon i {
+  color: var(--yellow-orange-color);
+  font-size: 2rem;
+}
+.social-links{
+  margin-top: 4rem;
+  justify-content: flex-start;
+}
+
+.social-links a {
+  margin-right: 2rem;
+  color: var(--yellow-orange-color);
+  transition: var(--transition);
+}
+
+.social-links a i {
+  font-size: 2.5rem;
+}
+
+.social-links a:hover {
+  color: var(--red-color);
+}
+
+.contact-form .form-control {
+  background-color: var(--gray-color);
+  max-width: 100%;
+  margin: 0;
+}
+
+.contact-form textarea.form-control {
+  height: auto;
+  resize: none;
+  padding: 1rem;
+}
+
+.contact-form .btn{
+  width: 100%;
+}
+
+.bg-block {
+  position: absolute;
+  background-color: var(--yellow-orange-color);
+  top: 50%;
+  left: 0;
+  height: 250px;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+
+
+
+
+
 
 
 
@@ -547,6 +631,12 @@ img {
   .pricing-item {
     width: 100%;
   }
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+  }
+
 
 }
 
